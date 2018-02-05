@@ -27,6 +27,6 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN set -x \
     && apt-get -yqq update \
     && apt-get -yqq dist-upgrade \
-    && apt-get -y kali-linux-full \
     && apt-get clean
+RUN apt-get -y install kali-linux-full
 CMD ["bash"]
