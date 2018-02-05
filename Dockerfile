@@ -28,5 +28,5 @@ RUN set -x \
     && apt-get -yqq update \
     && apt-get -yqq dist-upgrade \
     && apt-get clean
-RUN apt-get -y install kali-linux-full
+RUN apt-get -y install kali-linux-web
 CMD ["bash"]
